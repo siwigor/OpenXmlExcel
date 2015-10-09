@@ -587,7 +587,7 @@ namespace OpenXmlExcel
                     cell.DataType = new EnumValue<CellValues>(CellValues.SharedString);
                     break;
                 case ExcelCellType.Number:
-                    cell.CellValue = new CellValue(text);
+                    cell.CellValue = new CellValue(text.Replace(',', '.'));
                     cell.DataType = new EnumValue<CellValues>(CellValues.Number);
                     break;
                 case ExcelCellType.Date:

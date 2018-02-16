@@ -1,7 +1,8 @@
 # OpenXmlExcel
-Class for creating and opening files Excel. Based on the Open XML SDK.
+### Class for creating and opening files Excel. Based on the Open XML SDK.
 
-Example:
+### Example:
+```
 ---New Document----
 ExcelDocument doc = new ExcelDocument(saveDlg.FileName);
 ExcelSheet sheet = doc.Sheets.AddNew("MySheetTest");
@@ -25,3 +26,4 @@ doc.Sheets[1]["A5"].Value = "test";
 ExcelSheet sheet = doc.Sheets.AddNew("Test");
 sheet["D5"].Value = "test";
 doc.Close();
+```
